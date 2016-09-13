@@ -1,0 +1,70 @@
+QWidget {
+    background: #17025B;
+    font-size: 24px;
+    font-family: 'Georgia';
+    font-style: italic;
+}
+
+
+QGroupBox{
+  border: 2px solid #ffffff;
+  margin-top: 3ex;
+}
+
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+    padding: 0 3px;
+    color: #00f4d6;
+}
+
+
+QPushButton, QPushButton:focus, QPushButton:focus {
+  background: #5B0404;
+  border: none;
+  color: #0CE71B;
+  padding: 3px 20px;
+  subcontrol-position: center;
+}
+
+
+QPushButton:hover, QPushButton:hover:focus {
+  background: #073F6C;
+  border-color: #ffffff;
+}
+
+QLineEdit, QLineEdit:hover {
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #dddddd;
+    color: #13DF69;
+    background-color:rgba(0,0,0,0);
+}
+
+QLineEdit:editable{
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #b2dfdb;
+    font-size: 20px;
+}
+
+QLineEdit:disabled{
+    border: 0px solid white;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+QLineEdit:focus{
+    border: 0px solid white;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #00695c;
+    color: #D4F111;
+}
+
+QLineEdit:pressed {
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #00695c;
+}
+

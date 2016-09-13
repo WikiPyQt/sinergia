@@ -1,0 +1,19 @@
+QWidget
+{
+    color: #eff0f1;
+    background-color: #31363b;
+    selection-background-color:#053B57;
+    selection-color: #eff0f1;
+    background-clip: border;
+    border-image: none;
+    border: 0px transparent black;
+    outline: 0;
+}
+
+QRadioButton
+{
+    spacing: 5px;
+    outline: none;
+    color: #eff0f1;
+    margin-bottom: 2px;
+}

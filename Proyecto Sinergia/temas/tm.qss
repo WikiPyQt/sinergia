@@ -1,0 +1,154 @@
+QWidget#base{
+	background: #500D02;
+	font-size: 24px;
+	font-family: 'MV Boli';
+	font-style: italic;
+}
+
+
+QLabel#a, QLabel#b, QLabel#c
+{
+	font-size: 24px;
+	font-style: italic;
+	font-family: 'MV Boli';
+}
+
+QLabel#a, QLabel#b
+{
+	color: #04AEF5;
+}
+
+QLabel#c
+{
+	font-size: 24px;
+	font-style: italic;
+	color: #dda;
+}
+
+
+
+QGraphicsView
+{
+	border-image: url(./img/gato.jpg);
+	width: 10px;
+	height: 10px;
+}
+
+QTextEdit{
+    background-color: #ccc;
+    border: none;
+    color: red;
+    	font-size: 24px;
+	font-family: 'Georgia';
+	font-style: italic;
+    /*background-image: url(draft.png);*/
+    background-attachment: scroll;
+}
+
+QLineEdit, QLineEdit:hover {
+	border: none;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #E4FF02;
+	color: #13DF69;
+	background-color:rgba(0,0,0,0);
+}
+
+QLineEdit:editable{
+	border: none;
+	font-style: italic;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #b2dfdb;
+	font-size: 20px;
+}
+
+QLineEdit:disabled{
+	border: 0px solid white;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+QLineEdit:focus{
+	border: 0px solid white;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #00695c;
+	color: #D4F111;
+}
+QLineEdit:pressed {
+	border: none;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #00695c;
+}
+
+QPushButton#c, QPushButton#d, QPushButton#c:focus 
+{
+	font-size: 24px;
+	font-family: 'Georgia';
+	font-style: italic;
+	background: #067F6F;
+	border: none;
+	color: #26066F;
+	/*padding: 3px 20px;*/
+	subcontrol-position: center;
+}
+
+
+QPushButton#c:hover, QPushButton#d:hover QPushButton#c:hover:focus, QPushButton#d:hover:focus{
+	background: #073F6C;
+	border-color: #ffffff;
+}
+
+QComboBox {
+
+	font-size: 22px;
+	font-style: italic;
+    border: none;
+    padding: 1px 18px 1px 3px;
+    min-width: 5em;
+}
+
+QComboBox:editable {
+    background: blue;
+     border: none;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: #500D02;
+     color: #04AEF5;
+     border: none;
+}
+
+/* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+     border: none;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+ border: none;
+}
+
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+     border: none;
+}
+
+
+/*QFrame#mrca, QFrame#mrcb, QFrame#mrcc, QFrame#mrcd,
+{
+	background: #500D02;
+	font-size: 24px;
+	font-family: 'MV Boli';
+	font-style: italic;
+}*/

@@ -1,0 +1,106 @@
+QWidget {
+	background: #5B020F;
+	border-style: none;
+	font-size: 24px;
+	font-family: 'Georgia';
+	font-style: italic;
+}
+
+QWidget#gr
+{
+    background: #012F09;
+    border-style: none;
+	font-size: 24px;
+	font-family: 'Georgia';
+	font-style: italic;
+}
+
+QLabel#a, QLabel#b
+{
+	color: #04AEF5;
+}
+
+QLabel#v
+{
+	color: #A6F114;
+}
+
+QFrame#f
+{
+	border: 2px solid #5Ba20d;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QGroupBox#gr{
+	border: 1px solid #ffffff;
+	margin-top: 2ex;
+	height: 7px;
+}
+
+QGroupBox::indicator {
+	width: 13px;
+	height: 13px;
+}
+
+QGroupBox::title {
+	subcontrol-origin: margin;
+	subcontrol-position: top center; /* position at the top center */
+	padding: 0 3px;
+	color: #29F794;
+}
+
+
+QPushButton#c, QPushButton#d, QPushButton#c:focus 
+{
+	background: #067F6F;
+	border: none;
+	color: #EDFB09;
+	/*padding: 3px 20px;*/
+	subcontrol-position: center;
+}
+
+
+QPushButton#c:hover, QPushButton#d:hover QPushButton#c:hover:focus, QPushButton#d:hover:focus{
+	background: #073F6C;
+	border-color: #ffffff;
+}
+
+QLineEdit, QLineEdit:hover {
+	border: none;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #dddddd;
+	color: #13DF69;
+	background-color:rgba(0,0,0,0);
+}
+
+QLineEdit:editable{
+	border: none;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #b2dfdb;
+	font-size: 20px;
+}
+
+QLineEdit:disabled{
+	border: 0px solid white;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+QLineEdit:focus{
+	border: 0px solid white;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #00695c;
+	color: #D4F111;
+}
+QLineEdit:pressed {
+	border: none;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #00695c;
+}
+
+
+QGraphicsView
+{
+	border-image: url(./img/gato.jpg);
+}
